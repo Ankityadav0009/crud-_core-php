@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['name'];
     $email = $_POST['email'];
     $sql = "SELECT * FROM user2 where `name` ='$username' and `email`=  '$email' ";
-    // $sql = "SELECT * FROM user2 WHERE name='$username' and email=  $email";
+    // $sql = "SELECT * FROM user2 WHERE name='$username' and email=dflkjgldfkjglkdf  $email";
     $result=mysqli_query($conn, $sql);
 
     if ($result->num_rows == 1) 
